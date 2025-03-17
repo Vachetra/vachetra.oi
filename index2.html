@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salary Calculator</title>
+  <link rel="stylesheet" href="Calcucs.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="calculator-container">
+    <h1>Salary Calculator</h1>
+    <p>Enter your current salary and tip commission to calculate the total salary.</p>
+    <form id="salary-form">
+      <label for="current-salary">Current Salary:</label>
+      <input type="text" id="salary" placeholder="Enter salary" required>
+      <i id="toggle" class="fa-solid fa-money-check-dollar "></i>
+      
+      <label for="tip-commission">Commission:</label>
+      <input type="text" id="commission" placeholder="Commission (%)" required>
+      <i id="toggle1" class="fa-solid fa-percent"></i>
+      <button type="button" id="calculate">CALCULATE</button>
+    </form>
+    <div class="result">
+      <p>Total Salary: <span id="total">$0.00</span></p>
+    </div>
+  </div>
+  <script src="Calculate.js"></script>
+</body>
+</html>
